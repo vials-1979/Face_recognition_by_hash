@@ -1,0 +1,2 @@
+# Face_recognition_by_hash
+一个基于springboot+mybatis-plus的人脸识别系统
