@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>FaceSearchByHash</title>
+</head>
+
+<style th:inline="css">
+    body{
+        background: url("bj1.jpg") no-repeat ;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .ant-upload-drag-container{
+        background: cornsilk;
+
+        position: fixed;
+        top:320px;
+        right: 860px;
+    }
+    .ant-upload-drag-container input{
+        background: cornsilk;
+    }
+
+    .ant-upload-drag-container input{
+        background: cornsilk;
+    }
+
+</style>
+
+<body>
+<h1 th:align="center">Hash人脸图像识别系统</h1>
+
+<div class="ant-upload-drag-container">
+        <form method="post" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="file"/>
+            <input type="submit" value="提交"/>
+        </form>
+
+</div>
+
+</body>
+</html>

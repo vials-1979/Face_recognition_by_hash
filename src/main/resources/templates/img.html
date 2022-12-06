@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--th:text 为 Thymeleaf 属性，用于在展示文本-->
+<h1 th:text="检测结果"></h1>
+
+<script th:inline="javascript">
+    var single=0;
+    single = [[${flag}]];
+    if (single ==1) {
+        document.getElementById("message").innerHTML = "图片搜索错误，暂时无法 找到相关图片";
+    }
+</script>
+<p id="message"></p>
+
+<div class="source_img">
+    <h2>源图像</h2>
+
+    <img th:src="@{${img0}}">
+
+</div>
+
+
+<div class="source_img">
+    <h2>相关检测图像</h2>
+
+    <img th:src="@{${img1}}">
+    <img th:src="@{${img2}}">
+    <img th:src="@{${img3}}">
+    <img th:src="@{${img4}}">
+    <img th:src="@{${img5}}">
+    <img th:src="@{${img6}}">
+    <img th:src="@{${img7}}">
+    <img th:src="@{${img8}}">
+
+</div>
+
+
+
+
+</body>
+</html>
